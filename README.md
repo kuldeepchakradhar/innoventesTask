@@ -19,20 +19,26 @@ Json object would look like this:
 
 # for updating Employee
 -PutRequest
-http://localhost:6002/innoventes/employee/update/1
+http://localhost:6002/innoventes/employee/update/{id}
 
 {
 	"name": "Demo tast",
 	"dateOfBirth":"2001-01-01"
 }
 
+# for deleting Employee
+-DeleteRequest
+http://localhost:6002/innoventes/employee/delete/{id}
+
+
 # for getting list of employee
 -GetRuquest 
 http://localhost:6002/innoventes/employee/all
 
+
 # for getting employee by id
 -GetRequest
-http://localhost:6002/innoventes/employee/1
+http://localhost:6002/innoventes/employee/{id}
 
 
 
