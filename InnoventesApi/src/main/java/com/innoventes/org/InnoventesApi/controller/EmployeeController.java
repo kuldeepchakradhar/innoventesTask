@@ -29,7 +29,7 @@ public class EmployeeController {
 	@PostMapping("/add")
 	public ResponseEntity<Employee> add(@RequestBody Employee employee) throws Exception{
 		 
-		if(employee.getName()=="") throw new NotFoundException("Field name can not be empty");
+		if(employee.getName() == "") throw new NotFoundException("Field name can not be empty");
 		
 		Employee emp = employeeService.createEmployee(employee);
 		
